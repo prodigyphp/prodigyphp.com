@@ -39,6 +39,8 @@
                         {{ config('app.name') }}
                     </h1>
 
+                    <x-blocks.header title="yo" subtitle="yo"></x-blocks.header>
+
                     <ul class="list-reset">
                         <li class="inline px-4">
                             <a href="https://tailwindcss.com" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Tailwind CSS</a>

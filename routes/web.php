@@ -8,7 +8,11 @@ use App\Http\Livewire\Auth\Passwords\Email;
 use App\Http\Livewire\Auth\Passwords\Reset;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
+use App\Http\Livewire\Pages\TestPage;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
+use ProdigyPHP\Prodigy\ProdigyPage;
+use Symfony\Component\Yaml\Yaml;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +26,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
+
+Route::get('/test', function () {
+    $path = base_path('vendor/prodigyphp/prodigy/resources/views/blocks/standard/text.yaml');
+    $yaml = Yaml::parseFile($path);
+    dd($yaml);
+
+});
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
@@ -54,3 +65,6 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+Route::get('/testing-local', TestPage::class);
+Route::get('/{wildcard}', ProdigyPage::class)->where('wildcard', '.*');

@@ -1,0 +1,7 @@
+fields:
+  title:
+    type: string
+    rules: required
+  subtitle:
+    type: string
+    rules: required

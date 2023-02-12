@@ -12,9 +12,12 @@
         "laravel/octane": "^1.4",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "livewire/livewire": "^2.11"
+        "livewire/livewire": "^2.11",
+        "prodigyphp/prodigy": "dev-main",
+        "symfony/yaml": "^6.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
@@ -64,5 +67,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../prodigy"
+        }
+    ]
 }
