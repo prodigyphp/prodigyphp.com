@@ -1,7 +1,7 @@
 fields:
   title:
-    type: string
+    type: text
     rules: required
   subtitle:
-    type: string
+    type: text
     rules: required
