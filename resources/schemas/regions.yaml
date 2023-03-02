@@ -1,0 +1,10 @@
+type: regions
+role: taxonomy
+
+fields:
+  title:
+    type: text
+  contact_name:
+    type: text
+  contact_email:
+    type: text

@@ -45,6 +45,8 @@
                         </p>
                     </div>
 
+                    <x-prodigy::editor.input />
+
 
                     <h1 class="text-5xl font-extrabold tracking-wider text-center text-gray-600">
                         {{ config('app.name') }}

@@ -1,0 +1,14 @@
+type: investors
+role: entry
+
+labels:
+  singular: Investor
+  plural: Investors
+
+fields:
+  title:
+    type: text
+  contact_name:
+    type: text
+  contact_email:
+    type: text

@@ -1,0 +1,18 @@
+type: bcm
+role: entry
+slug: bcm
+
+labels:
+  singular: BCM
+  plural: BCMs
+
+fields:
+  title:
+    type: text
+  contact_name:
+    type: text
+  contact_email:
+    type: text
+
+taxonomies:
+  - regions

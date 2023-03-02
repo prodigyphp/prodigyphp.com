@@ -7,7 +7,9 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Hash;
+use ProdigyPHP\Prodigy\Models\Block;
 use ProdigyPHP\Prodigy\Models\Page;
+use ProdigyPHP\Prodigy\Models\Type;
 
 class DatabaseSeeder extends Seeder {
 
@@ -32,29 +34,26 @@ class DatabaseSeeder extends Seeder {
             'slug' => 'how-it-works',
         ]);
 
-        $page->blocks()->create([
+        $page->children()->create([
             'key' => 'blocks.headers.header',
             'content' => collect(['title' => 'What is the answer to life?', 'subtitle' => '42'])
         ]);
 
-        $row = $page->blocks()->create([
-            'key' => 'prodigy::blocks.basic.row'
-        ]);
+//        $row = $page->blocks()->create([
+//            'key' => 'prodigy::blocks.basic.row'
+//        ]);
+//
+//        Block::create([
+//           'key' => 'prodigy::blocks.basic.text',
+//           'content' => collect(['text' => 'So this is interesting.'])
+//        ]);
+//
+//        Block::create([
+//           'key' => 'prodigy::blocks.basic.text',
+//           'content' => collect(['text' => 'and in multiple columns!'])
+//        ]);
 
-        $row->children()->create([
-           'key' => 'prodigy::blocks.basic.text',
-           'content' => collect(['text' => 'So this is interesting.'])
-        ]);
 
-
-
-
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 
 }
