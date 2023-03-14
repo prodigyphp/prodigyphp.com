@@ -1,0 +1,10 @@
+@import 'prism-material-themes/themes/material-default.css';
+
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #151133;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  font-family: "Fira Code";
+}

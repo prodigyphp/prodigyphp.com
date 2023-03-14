@@ -18,6 +18,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "@alpinejs/collapse": "^3.11.1"
+        "@alpinejs/collapse": "^3.11.1",
+        "prism-material-themes": "^1.0.4"
     }
 }

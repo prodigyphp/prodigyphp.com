@@ -45,7 +45,21 @@
                         </p>
                     </div>
 
-                    <x-prodigy::editor.input />
+                    <x-prodigy::editor.input/>
+
+                    <div class="bg-green-300 p-4" draggable="false"></div>
+
+                    <div wire:ignore>
+                        <textarea id="prodigy-code-editor"></textarea>
+                    </div>
+
+
+                    <script>
+                        var editor = CodeMirror.fromTextArea(document.getElementById("prodigy-code-editor"), {
+                            lineNumbers: true,
+                            viewportMargin: Infinity
+                        });
+                    </script>
 
 
                     <h1 class="text-5xl font-extrabold tracking-wider text-center text-gray-600">

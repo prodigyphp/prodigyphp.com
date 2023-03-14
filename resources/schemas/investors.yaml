@@ -8,6 +8,7 @@ labels:
 fields:
   title:
     type: text
+    rules: required
   contact_name:
     type: text
   contact_email:

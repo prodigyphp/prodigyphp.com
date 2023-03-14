@@ -1,0 +1,7 @@
+fields:
+  header:
+    type: text
+    rules: required
+
+  body:
+    type: texteditor

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="scroll-padding-top:7rem;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,21 +11,20 @@
     @endif
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+    <link rel="shortcut icon" href="{{ url(asset('images/favicon.svg')) }}">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/prism.js'])
     @livewireStyles
     @livewireScripts
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <script src="/vendor/prodigy/js/codemirror.js" defer></script>
+
 </head>
 
-<body>
+<body class="font-sans">
 @yield('body')
 </body>
 </html>

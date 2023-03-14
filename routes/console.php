@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+
+//Artisan::command('migrate:fresh', function () {
+//    /** @var \Illuminate\Console\Command $cmd */
+//    $cmd = $this;
+//
+//    $cmd->ask("This is turned off for safety in console.php.", "No");
+//
+//})->purpose('Disable fresh command');

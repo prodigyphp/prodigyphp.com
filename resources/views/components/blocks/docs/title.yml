@@ -1,0 +1,8 @@
+fields:
+  text:
+    type: text
+    label: none
+    rules: required
+
+  subtitle:
+    type: text

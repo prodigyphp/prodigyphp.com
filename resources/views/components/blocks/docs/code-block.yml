@@ -1,0 +1,19 @@
+fields:
+  language:
+    type: dropdown
+    rules: required
+    default: php
+    options:
+      - php
+      - html
+      - css
+      - javascript
+      - yml
+      - markdown
+      - bash
+
+  label:
+    type: text
+
+  code:
+    type: code
