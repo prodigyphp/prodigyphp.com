@@ -2,10 +2,10 @@
 
 @php
 $classes = ($active ?? false)
-            ? 'block border-l pl-4 -ml-px text-sky-500 border-current'
-            : 'block border-l pl-4 -ml-px border-transparent hover:border-plan-400 hover:text-plan-400  text-slate-700 hover:text-slate-900';
+            ? 'block pl-4 -ml-px text-blue-700'
+            : 'block pl-4 -ml-px hover:text-blue-700';
 @endphp
 
-<a {{ $attributes->merge(['class' => $classes]) }} :class="visibleHeadingId == '{{ $slug }}' && 'font-bold text-gray-900'">
+<a {{ $attributes->merge(['class' => $classes]) }}>
     {{ $slot }}
 </a>

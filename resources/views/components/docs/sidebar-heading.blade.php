@@ -2,8 +2,8 @@
 
 @php
 $classes = ($active ?? false)
-            ? 'upppercase font-semibold pt-2 block text-plan-400 border-current'
-            : 'upppercase font-semibold pt-2 block text-slate-700 hover:text-plan-400';
+            ? 'font-semibold pt-2 block text-blue-600 border-current'
+            : 'font-semibold pt-2 block hover:text-blue-700';
 
 $activeRef = '';
 

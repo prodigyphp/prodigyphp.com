@@ -8,7 +8,7 @@
             <x-docs.sidebar></x-docs.sidebar>
         </div>
 
-        <div class="overflow-y-scroll lg:w-4/5 xl:w-3/5 lg:px-12 lg:ml-auto xl:mx-auto">
+        <div class="overflow-y-scroll lg:w-4/5 xl:w-3/5 lg:px-12 lg:pt-12 xl:px-20 lg:ml-auto xl:mx-auto">
             <main class="max-w-2xl mx-auto relative z-20 prose lg:text-lg max-w-none" listen-for-intersection-of-titles>
                 <livewire:prodigy-page/>
 
