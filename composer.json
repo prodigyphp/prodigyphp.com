@@ -13,7 +13,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.11",
-        "prodigyphp/prodigy": "dev-main",
+        "prodigyphp/prodigy": "^0.0.4",
         "spatie/laravel-medialibrary": "^10.0.0",
         "symfony/yaml": "^6.2"
     },
