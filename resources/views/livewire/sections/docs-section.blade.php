@@ -1,5 +1,5 @@
 <div class="" style="scroll-padding-top: 7rem;">
-    <header class="sticky top-0 border-b border-gray-100 z-[100] bg-white absolute shadow-sm">
+    <header class="sticky top-0 bg-white relative z-[99] lg:h-[5rem] border-b border-gray-100 z-[100] bg-white absolute shadow-sm">
         <livewire:prodigy-block block_title="Global Header"/>
     </header>
 

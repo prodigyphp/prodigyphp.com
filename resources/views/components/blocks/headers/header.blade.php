@@ -1,4 +1,4 @@
-<header class="bg-white" x-data="{show_menu: false}">
+<header class="absolute top-0 left-0 right-0 z-[99]" x-data="{show_menu: false}">
     <nav class="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">

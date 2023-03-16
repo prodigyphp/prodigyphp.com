@@ -1,0 +1,5 @@
+fields:
+  text:
+    type: text
+  link:
+    type: text

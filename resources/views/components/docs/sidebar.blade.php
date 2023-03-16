@@ -6,20 +6,47 @@
             'number' => '',
             'slug' => 'docs/getting-started',
             'sections' => array(
-            array(
-                    'title' => 'What is Prodigy?',
-                    'slug' => 'docs/what-is-prodigy',
-                ),
-                array(
-                    'title' => 'Installation',
-                    'slug' => 'docs/getting-started',
-                ),
+                array('title' => 'What is Prodigy?',    'slug' => 'docs/what-is-prodigy'),
+                array('title' => 'Installation',    'slug' => 'docs/getting-started'),
             ),
         ),
         array(
-                'title' => 'Available Fields',
-                'slug' => 'docs/available-fields'
-                )
+            'title' => 'The Basics',
+            'number' => '',
+            'slug' => 'docs/available-fields',
+            'sections' => array(
+                array( 'title' => 'Available fields', 'slug' => 'docs/available-fields'),
+                array( 'title' => 'Routing', 'slug' => 'docs/routing'),
+            ),
+        ),
+         array(
+            'title' => 'Making pages',
+            'number' => '',
+            'slug' => 'docs/making-blocks',
+            'sections' => array(
+                array( 'title' => 'Making blocks', 'slug' => 'docs/making-blocks'),
+                array( 'title' => 'Creating menus', 'slug' => 'docs/creating-menus'),
+                array( 'title' => 'Custom templates', 'slug' => 'docs/custom-templates'),
+            ),
+        ),
+        array(
+            'title' => 'The CMS',
+            'number' => '',
+            'slug' => 'docs/using-the-cms',
+            'sections' => array(
+                array( 'title' => 'Using the CMS', 'slug' => 'docs/using-the-cms'),
+                array( 'title' => 'Singular pages', 'slug' => 'docs/singular-pages')
+            ),
+        ),
+        array(
+            'title' => 'Deploying',
+            'number' => '',
+            'slug' => 'docs/deploying',
+            'sections' => array(
+                array( 'title' => 'Deploying to Prod', 'slug' => 'docs/deploying'),
+                array( 'title' => 'Creating backups', 'slug' => 'docs/backups')
+            ),
+        ),
 
     );
 

@@ -1,9 +1,10 @@
-type: investors
+type: team
 role: entry
 
 labels:
-  singular: Investor
-  plural: Investors
+  singular: Team Member
+  plural: Team Members
+  field_label: title
 
 fields:
   title:

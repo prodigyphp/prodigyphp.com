@@ -1,0 +1,13 @@
+fields:
+  title:
+    type: text
+    rules: required
+  subtitle:
+    type: text
+    rules: required
+  button_link:
+    type: text
+    rules: required
+  button_text:
+    type: text
+    rules: required
