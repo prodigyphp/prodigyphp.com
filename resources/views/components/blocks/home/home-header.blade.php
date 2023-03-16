@@ -1,5 +1,5 @@
 <div>
-    <div class="fixed inset-0 z-[0] bg-gradient-to-bl from-gray-50 to-white"></div>
+    <div class="fixed inset-0 z-[0] bg-gradient-to-b from-blue-50 to-white"></div>
     <div class="fixed inset-0 z-[1]">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px"
@@ -34,9 +34,9 @@
     </svg>
     </div>
 
-    <div class="z-[1] relative max-w-[750px] mx-auto text-center font-extrabold leading-tight lg:text-8xl min-h-screen w-full flex items-center justify-center">
+    <div class="z-[1] relative max-w-[850px] mx-auto text-center font-extrabold leading-tight text-5xl lg:text-8xl py-32 lg:min-h-screen w-full flex items-center justify-center">
         <div>
-            <div class="text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-800 mb-8">{{ $title ?? '' }}</div>
+            <div class="text-transparent bg-clip-text bg-gradient-to-b from-blue-900 to-gray-900 mb-8">{{ $title ?? '' }}</div>
             <div class="text-center text-center text-2xl font-[351] text-gray-600">
                 {!!  $subtitle ??'' !!}
             </div>

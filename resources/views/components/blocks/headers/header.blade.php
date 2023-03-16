@@ -1,5 +1,5 @@
 <header class="absolute top-0 left-0 right-0 z-[99]" x-data="{show_menu: false}">
-    <nav class="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="mx-auto flex items-center justify-between py-6 px-[20px] md:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
                 <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy_photos') }}" alt="">
@@ -48,7 +48,7 @@
                     <span class="sr-only">Prodigy</span>
                     <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy_photos') }}" alt="">
                 </a>
-                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <button type="button" x-on:click="show_menu = false"  class="-m-2.5 rounded-md p-2.5 text-gray-700">
                     <span class="sr-only">Close menu</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                          aria-hidden="true">
@@ -57,7 +57,7 @@
                 </button>
             </div>
             <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="-my-6 divide-y divide-gray-500/10 pb-32">
                     <div class="space-y-2 py-6">
                         @if(isset($content['menu']))
                             @foreach($content['menu'] as $item)
@@ -68,11 +68,11 @@
                             @endforeach
                         @endif
                     </div>
-                    <div class="py-6">
-                        <a href="#"
-                           class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                            in</a>
+
+                    <div>
+                        <x-docs.sidebar />
                     </div>
+
                 </div>
             </div>
         </div>

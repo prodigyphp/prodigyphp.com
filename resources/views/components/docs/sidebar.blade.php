@@ -55,7 +55,7 @@
 
 <aside>
     <nav class="lg:text-sm lg:leading-6 relative">
-        <ul class="pt-4 space-y-4">
+        <ul class="pt-4 space-y-4 md:pb-32">
             @foreach($chapters as $chapter)
                 <li>
                     <x-docs.sidebar-heading href="/{{ $chapter['slug'] }}" :active="request()->is( $chapter['slug'])">
