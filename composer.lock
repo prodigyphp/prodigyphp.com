@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5aa198b8d5c4e3f47d5275202b140fd7",
+    "content-hash": "d0caef7d699820683bf69f0c6473ba4b",
     "packages": [
         {
             "name": "brick/math",
@@ -2952,17 +2952,11 @@
         },
         {
             "name": "prodigyphp/prodigy",
-            "version": "0.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/prodigyphp/prodigy.git",
-                "reference": "fffe21309f94c47df3ff6c5cf9aa6d730c15b3c5"
-            },
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/prodigyphp/prodigy/zipball/fffe21309f94c47df3ff6c5cf9aa6d730c15b3c5",
-                "reference": "fffe21309f94c47df3ff6c5cf9aa6d730c15b3c5",
-                "shasum": ""
+                "type": "path",
+                "url": "../prodigy",
+                "reference": "e79699836c45aaeec29ca70587ce80e356e381ce"
             },
             "require": {
                 "ext-gettext": "*",
@@ -3003,7 +2997,28 @@
                     "ProdigyPHP\\Prodigy\\Database\\Factories\\": "database/factories"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "ProdigyPHP\\Prodigy\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -3021,11 +3036,9 @@
                 "laravel",
                 "prodigy"
             ],
-            "support": {
-                "issues": "https://github.com/prodigyphp/prodigy/issues",
-                "source": "https://github.com/prodigyphp/prodigy/tree/0.0.6"
-            },
-            "time": "2023-03-16T18:14:28+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "psr/container",
@@ -9276,7 +9289,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "prodigyphp/prodigy": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -26,7 +26,7 @@
             @endif
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://github.com/prodigyphp" class="text-gray-400 hover:text-gray-500">
+            <a href="https://github.com/prodigyphp/prodigy" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">GitHub</span>
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"

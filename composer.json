@@ -13,7 +13,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.11",
-        "prodigyphp/prodigy": "^0.0.6",
+        "prodigyphp/prodigy": "dev-main",
         "spatie/laravel-medialibrary": "^10.0.0",
         "symfony/yaml": "^6.2"
     },
@@ -68,5 +68,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../prodigy"
+        }
+    ]
 }
