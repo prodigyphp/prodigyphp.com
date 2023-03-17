@@ -62,4 +62,4 @@ Route::get('/testing-local', TestPage::class);
 Route::redirect('/docs', '/docs/getting-started');
 Route::get('/docs/{wildcard}', DocsSection::class);
 
-Route::get('/{wildcard}', ProdigyPage::class)->where('wildcard', '.*');
+Route::get('{wildcard}', ProdigyPage::class)->where('wildcard', '.*');
