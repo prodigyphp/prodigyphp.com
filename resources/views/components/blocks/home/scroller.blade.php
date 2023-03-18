@@ -1,5 +1,5 @@
 <div class="bg-cover bg-fixed bg-center relative"
-     style="background-image: url('{{ $block->getFirstMediaUrl('prodigy_photos') }}');">
+     style="background-image: url('{{ $block->getFirstMediaUrl('prodigy') }}');">
 
     <div class="z-[2] relative max-w-[850px] mx-auto text-center font-extrabold leading-tight py-32 lg:min-h-screen w-full flex items-center justify-center">
         <div class="px-8">
@@ -28,7 +28,7 @@
 
                 </div>
                 <div class="md:w-1/2 md:p-16">
-                    <img src="{{ $item->getFirstMediaUrl('prodigy_photos') }}" alt=""
+                    <img src="{{ $item->getFirstMediaUrl('prodigy') }}" alt=""
                          class="md:shadow-2xl md:rounded-md"/>
                 </div>
             </div>

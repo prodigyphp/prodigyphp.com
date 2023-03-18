@@ -16,6 +16,7 @@ use ProdigyPHP\Prodigy\FieldTypes\Range;
 use ProdigyPHP\Prodigy\FieldTypes\Repeater;
 use ProdigyPHP\Prodigy\FieldTypes\Text;
 use ProdigyPHP\Prodigy\FieldTypes\TextEditor;
+use ProdigyPHP\Prodigy\FieldTypes\Boolean;
 
 return [
 
@@ -62,6 +63,7 @@ return [
     |
     */
     'fields' => [
+        'boolean' => Boolean::class,
         'text' => Text::class,
         'number' => Number::class,
         'numberwithunit' => NumberWithUnit::class,

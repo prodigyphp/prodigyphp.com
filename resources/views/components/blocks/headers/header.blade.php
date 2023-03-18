@@ -2,7 +2,7 @@
     <nav class="mx-auto flex items-center justify-between py-6 px-[20px] md:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
-                <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy_photos') }}" alt="">
+                <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy') }}" alt="">
             </a>
         </div>
         <div class="flex lg:hidden">
@@ -46,7 +46,7 @@
             <div class="flex items-center justify-between">
                 <a href="/" class="-m-1.5 p-1.5">
                     <span class="sr-only">Prodigy</span>
-                    <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy_photos') }}" alt="">
+                    <img class="h-10 w-auto" src="{{ $block->getFirstMediaUrl('prodigy') }}" alt="">
                 </a>
                 <button type="button" x-on:click="show_menu = false"  class="-m-2.5 rounded-md p-2.5 text-gray-700">
                     <span class="sr-only">Close menu</span>

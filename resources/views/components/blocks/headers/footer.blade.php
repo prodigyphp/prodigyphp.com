@@ -1,7 +1,7 @@
 <footer class="bg-white relative z-[2]">
     <div class="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
         <a href="/" class="">
-        <img class="mx-auto max-w-[125px] mb-8" src="{{ $block->getFirstMediaUrl('prodigy_photos') }}" alt="">
+        <img class="mx-auto max-w-[125px] mb-8" src="{{ $block->getFirstMediaUrl('prodigy') }}" alt="">
     </a>
         <nav class="-mb-6 columns-3 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
 
