@@ -39,7 +39,7 @@ return [
     | Define the user emails which should have access to use Prodigy.
     |
     */
-    'access_emails' => ['stephen@bate-man.com'],
+    'access_emails' => ['stephen@bate-man.com', 'tony@devdojo.com'],
 
     /*
     |--------------------------------------------------------------------------

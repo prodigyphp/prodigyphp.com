@@ -16,6 +16,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/prism.js'])
     @livewireStyles
     @livewireScripts
+    @yield('pro_head')
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
